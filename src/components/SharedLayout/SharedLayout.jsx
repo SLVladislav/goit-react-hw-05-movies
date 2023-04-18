@@ -3,10 +3,12 @@ import { Suspense } from 'react';
 import { Loader } from 'components/Loader/Loader';
 import { Outlet } from 'react-router-dom';
 import { ToastContainer } from 'react-toastify';
+import { MyGlobalStyles } from '../GlobalStyle.styled';
 
 export const SharedLayout = () => {
   return (
     <div>
+      <MyGlobalStyles />
       <Header>
         <nav>
           <StyledNavLink to="/">Home</StyledNavLink>

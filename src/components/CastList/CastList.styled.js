@@ -17,5 +17,5 @@ export const CastInfo = styled.div`
   display: flex;
   flex-direction: column;
   gap: 8px;
-  color: ${props => props.theme.black};
+  color: #161616;
 `;

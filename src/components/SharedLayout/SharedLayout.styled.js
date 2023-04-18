@@ -19,8 +19,8 @@ export const Header = styled.header`
   min-height: 64px;
   padding: 12px 24px;
   margin-bottom: 16px;
-  color: ${props => props.theme.white};
-  background-color: ${props => props.theme.accent};
+  color: #f1f1f1;
+  background-color: #dbdbdb;
   box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
     0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
   > nav {
@@ -33,38 +33,38 @@ export const StyledNavLink = styled(NavLink)`
   padding: 8px 16px;
   border-radius: 20px;
   text-decoration: none;
-  color: ${props => props.theme.black};
+  color: #161616;
   font-weight: 500;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &.active {
-    color: ${props => props.theme.white};
-    background-color: ${props => props.theme.border};
+    color: #f1f1f1;
+    background-color: #686868;
   }
   &:hover {
-    color: ${props => props.theme.white};
-    background-color: ${props => props.theme.border};
+    color: #f1f1f1;
+    background-color: #686868;
   }
 `;
 
 export const Title = styled.h1`
   margin-bottom: 18px;
-  color: ${props => props.theme.black};
+  color: #161616;
   text-align: center;
 `;
 
 export const StyledLink = styled(Link)`
   text-decoration: none;
   padding: 5px 10px;
-  color: ${props => props.theme.black};
-  background-color: ${props => props.theme.accent};
+  color: #161616;
+  background-color: #dbdbdb;
   border-radius: 20px;
   display: inline-block;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover {
-    color: ${props => props.theme.white};
-    background-color: ${props => props.theme.border};
+    color: #f1f1f1;
+    background-color: #686868;
   }
 `;
 

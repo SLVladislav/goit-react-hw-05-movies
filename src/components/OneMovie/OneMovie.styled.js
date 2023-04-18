@@ -14,7 +14,7 @@ export const Info = styled.div`
   display: flex;
   flex-direction: column;
   gap: 18px;
-  color: ${props => props.theme.black};
+  color: #161616;
 `;
 
 export const Genres = styled.ul`

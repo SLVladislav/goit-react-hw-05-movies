@@ -1,9 +1,8 @@
-import { Title } from 'components/ReviewsList/ReviewsList.styled';
+import { Title } from 'components/SharedLayout/SharedLayout.styled';
 import PropTypes from 'prop-types';
 import { TrendingList } from '../components/TrendingList/TrendingList';
 
 const Home = ({ movies }) => {
-  
   return (
     <main>
       <Title>Trending today</Title>

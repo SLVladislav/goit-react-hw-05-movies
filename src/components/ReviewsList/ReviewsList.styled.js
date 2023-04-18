@@ -1,7 +1,7 @@
 import styled from '@emotion/styled';
 
 export const Title = styled.p`
-  color: ${props => props.theme.black};
+  color: #161616;
   font-size: 18px;
   line-height: 24px;
   font-style: normal;
@@ -17,7 +17,7 @@ export const Review = styled.li`
   display: flex;
   flex-direction: column;
   gap: 6px;
-  border-bottom: 1px solid ${props => props.theme.black};
+  border-bottom: 1px solid #161616;
   padding-bottom: 8px;
 `;
 

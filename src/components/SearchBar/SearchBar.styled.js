@@ -13,7 +13,7 @@ export const Input = styled.input`
   display: inline-block;
   width: 100%;
   font-size: 20px;
-  border: 1px solid ${props => props.theme.accent};
+  border: 1px solid #dbdbdb;
   border-radius: 20px;
   outline: none;
   padding-left: 18px;

@@ -25,7 +25,7 @@ export const Image = styled.img`
 `;
 
 export const Title = styled.p`
-  color: ${props => props.theme.black};
+  color: #161616;
   font-size: 18px;
   line-height: 24px;
   font-style: normal;

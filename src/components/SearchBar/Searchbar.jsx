@@ -1,6 +1,5 @@
 import { BsSearch } from 'react-icons/bs';
-import { Form } from 'react-router-dom';
-import { Input, Label, SearchButton } from './SearchBar.styled';
+import { Input, Form, Label, SearchButton } from './SearchBar.styled';
 
 export const SearchBar = ({ onSubmit }) => {
   return (

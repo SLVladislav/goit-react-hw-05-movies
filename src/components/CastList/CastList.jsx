@@ -2,6 +2,7 @@ import placeholder from '../../Images/placeholder.webp';
 import { CastInfo, CastItem, List } from './CastList.styled';
 
 export const CastList = ({ cast }) => {
+  console.log(cast)
   return (
     <List>
       {cast.length > 15

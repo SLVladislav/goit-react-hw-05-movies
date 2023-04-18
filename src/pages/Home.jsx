@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import { TrendingList } from '../components/TrendingList/TrendingList';
 
 const Home = ({ movies }) => {
+  console.log(movies)
   return (
     <main>
       <Title>Trending today</Title>

@@ -1,5 +1,5 @@
-import { ThemeProvider } from 'styled-components';
-import { GlobalStyle, theme } from 'components/GlobalStyle';
+// import { ThemeProvider } from 'styled-component';
+import { GlobalStyle, nptheme } from 'components/GlobalStyle.styled';
 import { Container, Header, StyledNavLink } from './SharedLayout.styled';
 import { Suspense } from 'react';
 import { Loader } from 'components/Loader/Loader';

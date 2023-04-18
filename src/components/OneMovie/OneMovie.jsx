@@ -1,10 +1,9 @@
 import { Genres, Info, Poster, Wrapper } from './OneMovie.styled';
 
 export const OneMovie = ({ movie }) => {
-  console.log(movie);
   const { title, poster_path, release_date, vote_average, overview, genres } =
     movie;
-console.log(genres.cast[0]);
+
   return (
     <Wrapper>
       <Poster

@@ -3,7 +3,6 @@ import { Item, List, Title, Image } from './TrendingList.styled';
 import PropTypes from 'prop-types';
 
 export const TrendingList = ({ movies }) => {
-  console.log(movies)
   return (
     <List>
       {movies.map(({ id, title, poster_path }) => {

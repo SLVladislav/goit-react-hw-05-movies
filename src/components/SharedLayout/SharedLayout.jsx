@@ -1,5 +1,3 @@
-// import { ThemeProvider } from 'styled-component';
-import { GlobalStyle, nptheme } from 'components/GlobalStyle.styled';
 import { Container, Header, StyledNavLink } from './SharedLayout.styled';
 import { Suspense } from 'react';
 import { Loader } from 'components/Loader/Loader';
@@ -8,8 +6,7 @@ import { ToastContainer } from 'react-toastify';
 
 export const SharedLayout = () => {
   return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyle />
+    <div>
       <Header>
         <nav>
           <StyledNavLink to="/">Home</StyledNavLink>
@@ -22,6 +19,6 @@ export const SharedLayout = () => {
         </Suspense>
         <ToastContainer autoClose={1500} hideProgressBar={true} />
       </Container>
-    </ThemeProvider>
+    </div>
   );
 };

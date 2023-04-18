@@ -1,18 +1,19 @@
 import { BiArrowBack } from 'react-icons/bi';
-const { useState, useEffect, Suspense } = 'react';
-const { useParams, useLocation } = 'react-router-dom';
-const { fetchMoviesById } = 'services/fetch-app';
+import { Outlet, useLocation, useParams } from 'react-router';
+import { useState } from 'react';
+import { useEffect } from 'react';
+import { fetchMoviesById } from 'services/fetch-app';
+import { Suspense } from 'react';
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import {
   ButtonsList,
   StyledLink,
   Wrapper,
 } from 'components/SharedLayout/SharedLayout.styled';
-import { toast } from 'react-toastify';
-import 'react-toastify/dist/ReactToastify.css';
 import { Loader } from 'components/Loader/Loader';
 import { OneMovie } from 'components/OneMovie/OneMovie';
 import { Label } from 'components/SearchBar/SearchBar.styled';
-import { Outlet } from 'react-router-dom';
 
 const MovieDetails = () => {
   const { id } = useParams();

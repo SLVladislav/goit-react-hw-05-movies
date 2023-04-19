@@ -1,13 +1,18 @@
 import { Genres, Info, Poster, Wrapper } from './OneMovie.styled';
+import placeholder from '../../Images/placeholder.webp';
 
 export const OneMovie = ({ movie }) => {
   const { title, poster_path, release_date, vote_average, overview, genres } =
     movie;
-
+ 
   return (
     <Wrapper>
       <Poster
-        src={'https://image.tmdb.org/t/p/w500' + poster_path}
+        src={
+          poster_path
+            ? 'https://image.tmdb.org/t/p/w500/' + poster_path
+            : placeholder
+        }
         alt={title}
       />
       <Info>

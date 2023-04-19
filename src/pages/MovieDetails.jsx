@@ -37,7 +37,7 @@ const MovieDetails = () => {
   if (isLoaded) {
     return (
       <main>
-        <StyledLink to={`${location.state.from}`}>
+        <StyledLink to={{ from: `${location.state?.from ?? '/'}` }}>
           <Label>
             <BiArrowBack style={{ width: 20, height: 24 }} />
             Go Back
@@ -47,16 +47,19 @@ const MovieDetails = () => {
           <OneMovie movie={movie} />
           <ButtonsList>
             <li>
-              <StyledLink to="cast" state={{ from: `${location.state.from}` }}>
+              <StyledLink
+                to="cast"
+                state={{ from: `${location.state?.from ?? '/'}` }}
+              >
                 Cast
               </StyledLink>
             </li>
             <li>
               <StyledLink
                 to="reviews"
-                state={{ from: `${location.state.from}` }}
+                state={{ from: `${location.state?.from ?? '/'}` }}
               >
-                Reviews
+                Rewiews
               </StyledLink>
             </li>
           </ButtonsList>

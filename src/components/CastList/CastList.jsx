@@ -28,7 +28,11 @@ export const CastList = ({ cast }) => {
               <CastItem key={id}>
                 <CastInfo>
                   <img
-                    src={'https://image.tmdb.org/t/p/w500' + profile_path}
+                    src={
+                      profile_path
+                        ? 'https://image.tmdb.org/t/p/w500' + profile_path
+                        : placeholder
+                    }
                     alt={name}
                   />
                   <p>Character: {character}</p>

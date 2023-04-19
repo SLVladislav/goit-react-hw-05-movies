@@ -16,7 +16,7 @@ export const App = () => {
     async function fetch() {
       try {
         const movies = await fetchTrending();
-        setMovies([...movies]);        
+        setMovies([...movies]);
       } catch (error) {
         console.log(error);
       }

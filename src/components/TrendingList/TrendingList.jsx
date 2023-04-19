@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import placeholder from '../../Images/placeholder.webp';
 import { Item, List, Title, Image } from './TrendingList.styled';
 import PropTypes from 'prop-types';
 
@@ -14,7 +15,7 @@ export const TrendingList = ({ movies }) => {
                   src={
                     poster_path
                       ? 'https://image.tmdb.org/t/p/w500/' + poster_path
-                      : 'No image'
+                      : placeholder
                   }
                   alt=""
                 />

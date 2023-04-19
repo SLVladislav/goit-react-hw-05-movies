@@ -37,7 +37,7 @@ const MovieDetails = () => {
   if (isLoaded) {
     return (
       <main>
-        <StyledLink to={{ from: `${location.state?.from ?? '/'}` }}>
+        <StyledLink to={`${location.state?.from ?? '/'}`}>
           <Label>
             <BiArrowBack style={{ width: 20, height: 24 }} />
             Go Back

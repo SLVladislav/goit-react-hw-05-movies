@@ -1,4 +1,5 @@
 import { List } from 'components/CastList/CastList.styled';
+import placeholder from '../../Images/placeholder.webp';
 import { Link, useLocation } from 'react-router-dom';
 import { Item, Title, Image } from './SearchList.styled';
 import PropTypes from 'prop-types';
@@ -19,7 +20,7 @@ export const SearchList = ({ movies }) => {
                   src={
                     poster_path
                       ? 'https://image.tmdb.org/t/p/w500/' + poster_path
-                      : 'No image'
+                      : placeholder
                   }
                   alt="title"
                 />
